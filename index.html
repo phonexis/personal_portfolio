@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+        
+    <section class="banner" id="home">
+        <div class="image">
+          <img src="resources/images/profile.jpeg" alt="Picture">  
+        </div>
+        
+        <div class="content">
+            <h5 class="logo">My_Portfolio</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Dorjee Gyaltsen</h2>
+                <h4>I'm an aspiring Front End Web Developer</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et adipisci distinctio harum iure assumenda 
+                possimus corrupti impedit vero perspiciatis, dolores, cum officia ea! Officia, repellat perspiciatis 
+                a inventore veritatis facilis.
+                Esse incidunt repudiandae perferendis iusto voluptate minus a ducimus accusamus totam magnam, 
+                sed fugiat laudantium deleniti est ipsam rerum ea repellat odit sequi adipisci facilis fuga nostrum! Corporis, aut rerum.
+                </p>
+                <a href="#about_me" class="btn">About Me</a>
+            </div> 
+            <div class="social">
+                <li><a href="#"><img src="resources/images/twitter.png"></a></li>
+                <li><a href="#"><img src="resources/images/facebook.png"></a></li>
+                <li><a href="#"><img src="resources/images/instagram.png"></a></li>
+            </div>    
+        </div>
+    </section>
+    <section class="about" id="about_me">
+        <!-- <div class="contentbox"> -->
+            <div class="title white">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="contentbx">
+                <div class="textbx">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et adipisci distinctio harum iure assumenda 
+                    possimus corrupti impedit vero perspiciatis, dolores, cum officia ea! Officia, repellat perspiciatis 
+                    a inventore veritatis facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, architecto repudiandae, 
+                    nulla inventore illum aliquid asperiores eveniet quo molestias obcaecati voluptas consequuntur commodi blanditiis ipsa nisi at,
+                    earum dolore dicta!<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, doloribus. Sint ex voluptates atque 
+                    placeat nesciunt! Explicabo ut autem animi officia molestias ab nemo natus, cumque reprehenderit qui sint voluptatum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente dolorum facilis ea dolorem quibusdam suscipit, dicta labore a ipsa 
+                    doloribus, reiciendis excepturi inventore praesentium. Vitae consectetur eos commodi perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ad, provident. Voluptatibus qui autem, suscipit hic ad aliquam quia sunt velit illum dolore quaerat natus rerum in. Eius dolorum placeat commodi!</p>
+                </div>
+                <div class="imgbx">
+                    <img src="resources/images/about_pic.jpeg" alt="">
+                </div>
+            </div>
+            
+        <!-- </div> -->
+    </section>
+    <section class="project" id="projects"> 
+        <div class="projectbox">
+            <h2>Projects</h2>
+            <div class="projectlist">
+                <h4>Polymorphism Project (C++, Linux)</h4>                                                         
+                <p>Implemented a Zoo Record class that stores different Animal-derived objects into a 
+                 Double Linked List and differentiates the animals into categories such as Bird, Fish, Mammal, etc. 
+                </p>     
+            </div>
+            <div class="projectlist">
+                <h4>Covid-19, Database Project (SQL, PHP, HTML)</h4> 
+                <p>Designed an html website with a local server by xampp that includes data entries for Covid_19 to be inputted.
+                   Using SQL queries to output specific tables of information regarding COVID-19.
+                </p>
+            </div>
+            <div class="projectlist">
+                <h4>Hetio-Net, Big Data (MongoDB, Python, Neo4J)</h4>
+                <p>Designed a python program that utilizes mongo DB, loading data from a text file to displays information 
+                   depending on the disease inputted. 
+                </p> 
+            </div>
+        </div> <!-- projectbox-->
+        <div class="skill-box">
+            <h2>Skills</h2>
+            <nav class="skill-list">
+                <ul>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>Linux</li>
+                </ul>
+            </nav>
+        </div> <!--skill-box-->
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <div class="title white">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor 
+               sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="form">
+                <div class="row">
+                    <div class="col50">
+                        <input type="text" name="" placeholder="First Name">
+                    </div>
+                    <div class="col50">
+                        <input type="text" name="" placeholder="Last Name">
+                    </div>   
+                </div>
+                <div class="row">
+                    <div class="col50">
+                        <input type="text" name="" placeholder="Email">
+                    </div>
+                    <div class="col50">
+                        <input type="text" name="" placeholder="Mobile No.">
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col100">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>  
+            </div> 
+        </div>
+    </section>  
+
+    <nav class="sideBar" onclick="toggleMenu();">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects/Skills</a></li>
+            <!-- <li><a href="#skills">Skills</a></li> -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.toggle');
+            const menuSidebar = document.querySelector('.sideBar');
+            menuToggle.classList.toggle('active')
+            menuSidebar.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
